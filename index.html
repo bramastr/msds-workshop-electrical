@@ -39,6 +39,13 @@ a.doc:focus-visible{outline:4px solid var(--b);outline-offset:3px}
 .sos p{margin:0;font-size:15px}
 .fine{font-size:13px;color:var(--mut);margin:14px 0 0}
 @media(max-width:420px){.grid{grid-template-columns:1fr}.open{grid-row:auto;grid-column:1}a.doc{grid-template-columns:1fr}}
+.list{list-style:none;margin:0;padding:0;background:#fff;border:2px solid var(--k);border-radius:8px}
+.list li+li{border-top:1px solid #d9d9d4}
+.list a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px;min-height:60px;color:inherit;text-decoration:none;font:600 18px/1.25 Barlow,sans-serif}
+.list a:active{background:var(--y)}
+.list a:focus-visible{outline:4px solid var(--b);outline-offset:-4px}
+.list em{flex:none;font:800 15px/1 "Barlow Condensed",sans-serif;font-style:normal;background:var(--g);color:#fff;padding:6px 9px;border-radius:4px}
+.list em.en{background:var(--b)}
 </style></head><body>
 <div class="stripe"></div>
 <header class="hero"><div class="in">
@@ -48,10 +55,11 @@ a.doc:focus-visible{outline:4px solid var(--b);outline-offset:3px}
 </div></header>
 <div class="stripe"></div>
 <main>
-<h2>Pilih dokumen</h2>
-<a class="doc" href="msds-4622-id-ghs.pdf"><div><b>4622 Monolec Multiplex Lubricant</b><div class="meta"><span class="tag">ID</span>Bahasa Indonesia, GHS. Revisi 19 Feb 2019, 11 halaman, 68 KB</div></div><span class="open">BUKA PDF</span></a>
-<a class="doc" href="msds-4622-nlgi2-en.pdf"><div><b>LE4622 Monolec Multiplex Lubricant</b><div class="meta"><span class="tag en">EN</span>Bahasa Inggris, Chemwatch. Revisi 1 Nov 2019, 9 halaman, 266 KB</div></div><span class="open">BUKA PDF</span></a>
-
+<h2>Dokumen</h2>
+<ul class="list">
+<li><a href="msds-4622-id-ghs.pdf"><span>4622 Monolec Multiplex Lubricant</span><em>ID</em></a></li>
+<li><a href="msds-4622-nlgi2-en.pdf"><span>LE4622 Monolec Multiplex Lubricant</span><em class="en">EN</em></a></li>
+</ul>
 <div class="ppe"><span>Wajib pakai APD</span>Kacamata pelindung, sarung tangan, pakaian lengan panjang. Jangan makan, minum, atau merokok saat bekerja. Cuci tangan setelahnya.</div>
 </main>
 </body></html>
